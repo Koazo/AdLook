@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="DataBasePraktik.AdminController_Users"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DataBasePraktik"
+             mc:Ignorable="d" 
+             Loaded="UserControl_Loaded"
+             Height="545" Width="774">
+    <Grid>
+        <DataGrid SelectionChanged="dataGrid1_SelectionChanged" x:Name="dataGrid1" HorizontalAlignment="Left" Height="447" Margin="322,10,0,0" VerticalAlignment="Top" Width="442"/>
+
+        <TextBox x:Name="textBoxUsername" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" TextWrapping="Wrap" Text="Имя пользователя" VerticalAlignment="Top" Width="295"/>
+
+        <TextBox x:Name="textBoxUserMail" HorizontalAlignment="Left" Height="25" Margin="10,55,0,0" TextWrapping="Wrap" Text="Почта пользователя" VerticalAlignment="Top" Width="295"/>
+        <TextBox x:Name="textBoxUserPhone" HorizontalAlignment="Left" Height="25" Margin="10,96,0,0" TextWrapping="Wrap" Text="Телефон пользователя" VerticalAlignment="Top" Width="295"/>
+
+        <Button Content="Добавить" x:Name="ButtonAdd" HorizontalAlignment="Left" Margin="322,489,0,0" VerticalAlignment="Top" Width="100" Click="ButtonAdd_Click"/>
+        <Button Content="Изменить" x:Name="ButtonUpdate" HorizontalAlignment="Left" Margin="504,489,0,0" VerticalAlignment="Top" Width="100" Click="ButtonUpdate_Click"/>
+        <Button Content="Удалить" x:Name="ButtonDelete" HorizontalAlignment="Left" Margin="664,489,0,0" VerticalAlignment="Top" Width="100" Click="ButtonDelete_Click"/>
+        <ComboBox x:Name="ComboboxRoles" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Width="295"/>
+        <Label Content="Роль пользователя" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top" Width="295" Foreground="Black"/>
+        <TextBox x:Name="textBoxUserPassword" HorizontalAlignment="Left" Height="25" Margin="10,190,0,0" TextWrapping="Wrap" Text="Пароль пользователя" VerticalAlignment="Top" Width="295"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="DataBasePraktik.AdminController_Products"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DataBasePraktik"
+             mc:Ignorable="d" 
+             Height="545" Width="774">
+    <Grid>
+        <DataGrid x:Name="dataGrid1" HorizontalAlignment="Left" Height="447" Margin="322,10,0,0" VerticalAlignment="Top" Width="442"/>
+
+        <TextBox PreviewKeyDown="textBoxName_PreviewKeyDown"  x:Name="textBoxName" HorizontalAlignment="Left" Height="25" Margin="10,156,0,0" TextWrapping="Wrap" Text="Имя товара" VerticalAlignment="Top" Width="295"/>
+
+        <TextBox PreviewKeyDown="textBoxName_PreviewKeyDown"  x:Name="textBoxDescription" HorizontalAlignment="Left" Height="25" Margin="10,196,0,0" TextWrapping="Wrap" Text="Описание товара" VerticalAlignment="Top" Width="295"/>
+
+        <ComboBox x:Name="comboBoxCategories" HorizontalAlignment="Left" Margin="10,256,0,0" VerticalAlignment="Top" Width="295"/>
+        <Label Content="Категория" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" Width="295" Foreground="Black"/>
+
+        <ComboBox x:Name="comboBoxType" HorizontalAlignment="Left" Margin="10,316,0,0" VerticalAlignment="Top" Width="295"/>
+        <Label Content="Тип" HorizontalAlignment="Left" Margin="10,291,0,0" VerticalAlignment="Top" Width="295" Foreground="Black"/>
+
+        <ComboBox x:Name="comboBoxMark" HorizontalAlignment="Left" Margin="10,376,0,0" VerticalAlignment="Top" Width="295"/>
+        <Label Content="Производитель" HorizontalAlignment="Left" Margin="10,356,0,0" VerticalAlignment="Top" Width="295" Foreground="Black"/>
+        <ComboBox x:Name="comboBoxLocation" HorizontalAlignment="Left" Margin="10,429,0,0" VerticalAlignment="Top" Width="295"/>
+        <Label Content="Город" HorizontalAlignment="Left" Margin="10,409,0,0" VerticalAlignment="Top" Width="295" Foreground="Black"/>
+        <CheckBox IsChecked="False" x:Name="isSoldCheck" Content="Товар продан" HorizontalAlignment="Left" Margin="10,478,0,0" VerticalAlignment="Top" Width="295"/>
+
+        <TextBox x:Name="textBoxPrice" HorizontalAlignment="Left" Height="25" Margin="10,510,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top" Width="295"/>
+        <Image x:Name="imageBox" HorizontalAlignment="Left" Height="130" Margin="10,10,0,0" VerticalAlignment="Top" Width="130"/>
+        <Button x:Name ="ButtonSetImage" Content="Загрузить фото" HorizontalAlignment="Left" Margin="169,10,0,0" VerticalAlignment="Top" Width="136" Click="ButtonSetImage_Click"/>
+
+        <Button x:Name="ButtonInsert" Click="ButtonInsert_Click" Content="Добавить" HorizontalAlignment="Left" Margin="322,489,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="ButtonUpdate" Click="ButtonUpdate_Click" Content="Изменить" HorizontalAlignment="Left" Margin="504,489,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="ButtonDelete" Click="ButtonDelete_Click" Content="Удалить" HorizontalAlignment="Left" Margin="664,489,0,0" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</UserControl>
